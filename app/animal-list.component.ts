@@ -12,9 +12,6 @@ import { filterByAgePipe } from './filterByAge.pipe';
     <option value="young">Younger Animals</option>
     <option selected="selected" value="all">All Animals</option>
   </select>
-  <button (click)="sendAnimalTocreate(animalToCreate)">Add a new Animal</button>
-
-
 
   <ul>
    <li *ngFor="let currentAnimal of masterAnimalList | filterByAgePipe:desiredAge" [class]="ageColor(currentAnimal)">
@@ -41,7 +38,7 @@ import { filterByAgePipe } from './filterByAge.pipe';
    <button (click)="doneEditing()">Done</button>
  </div>
 
-  <new-animal></new-animal>
+  <new-animal (clickSender)="newAnimal($event)"></new-animal>
   `
 })
 
@@ -81,5 +78,9 @@ export class AnimalListComponent {
 
   doneEditing(){
     this.editingAnimal = false;
+  }
+
+  newAnimal(newAnimal){
+    this.masterAnimalList.push(newAnimal);
   }
 }
