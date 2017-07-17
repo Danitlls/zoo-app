@@ -20,7 +20,7 @@ import { filterByAgePipe } from './filterByAge.pipe';
    </li>
  </ul>
 
- <div id="updateForm" *ngIf="editingAnimal">
+ <div id="updateForm" *ngIf="editingAnimal" class="editForm">
   <h3>{{selectedAnimal.species}}, {{selectedAnimal.sex}}</h3>
    <h3>Edit Animal</h3>
    <label>Enter Animal Description:</label>

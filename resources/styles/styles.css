@@ -2,5 +2,64 @@
   background-color: lightblue;
 }
 .adultAnimal{
-  background-color: blue;
+  background-color: #0f548f;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  text-align: center;
+}
+/* List of Animals:*/
+ul{
+  list-style: none;
+  margin: 20px;
+}
+li{
+  width:200px;
+  padding: 0 15px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px auto;
+}
+
+.newForm{
+  background-color: #cff9b4;
+  padding: 10px;
+}
+.newForm h3{
+  padding: 10px 0;
+  border: 2px solid #8cd082;
+  margin: 30px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.editForm {
+ border: 2px solid #e7619a;
+}
+
+h1{
+  color: white;
+  font-size: 50px;
+  margin-top: 0;
+  background-color: hotpink;
+  background-image: url("https://cloudfront.safaribookings.com/library/uganda/xxl/Semliki_Valley_Wildlife_Reserve_004.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 100px;
+
+}
+
+button{
+  background-color: #e7619a;
+  border-style: none;
+  border-radius: 5px;
+  margin: 5px auto;
+  padding: 5px 10px;
+  color: white;
 }

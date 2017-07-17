@@ -4,7 +4,7 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'new-animal',
   template: `
-  <div #NewForm >
+  <div #NewForm class="newForm">
     <h3>Add new Animal</h3>
     <!-- add ids to each input to be able to get it -->
     <label>Enter Animal Species:</label>
